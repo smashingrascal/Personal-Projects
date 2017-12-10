@@ -1,0 +1,42 @@
+#Sintro{
+  padding: 0;
+width:100%
+}
+
+#Sintro h3{
+  position: relative;
+  top:350px;
+  z-index: 2;
+  color:white;
+  -webkit-text-stroke: 1px black;
+}
+
+#Sintro h6{
+  position: absolute;
+  top:650px;
+  right: 10px;
+  z-index: 2;
+  color:white;
+  -webkit-text-stroke: 1px black;
+}
+
+#Sintro img{
+  z-index: 1;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+
+}
+
+#Swelcome-skills{
+
+}
+
+#Swelcome-projects{
+
+}
+
+.Sinfoblock{
+  position: relative;
+  height:300px;
+}

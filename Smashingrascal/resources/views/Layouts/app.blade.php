@@ -10,12 +10,11 @@ $Sheader = \App\Http\Controllers\DesignController::getHeader();
     @include('includes.Head')
 </head>
 <body>
-  <div id="app">
+
+      <div id="Stop">
         @include('includes.Navigation')
-        <div id="Sapplication" style="background-color:{{$Sheader['appcolor']}};">
-          @yield('content')
-        </div>
       </div>
+          @yield('content')
 
     <!-- Styles -->
     @include('includes.Scripts')
