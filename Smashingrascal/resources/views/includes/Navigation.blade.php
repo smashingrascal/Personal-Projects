@@ -6,7 +6,7 @@ $Sheader = \App\Http\Controllers\DesignController::getHeader();
 <div id="Simagebar"class="container-fluid" style="background-color: {{$Sheader['headercolor']}} ">
 
     <div class="row">
-  <img id="Semblem" onclick="openNav()" src="{{$Sheader['emblem']}}" alt="Secret Button"/>
+  <img id="Semblem" class="button" onclick="openNav()" src="{{$Sheader['emblem']}}" alt="Secret Button"/>
   <img id="Sbanner" src="{{$Sheader['banner']}}" alt="Card image cap">
   <img id="Sicon" src="{{$Sheader['icon']}}" alt="Oops">
 </div>

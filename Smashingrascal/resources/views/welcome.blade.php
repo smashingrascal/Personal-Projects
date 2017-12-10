@@ -7,14 +7,15 @@
       <div class="center">
         <div>
         <h3> Welcome to my domain <br> I hope you got invited here. <br> Otherwise I'd advise you to leave</h3>
-        <h6> -smash </h6>
+        <h6 id="SwelcomeScroller" class="button" onclick="scrollWelcomeSkills()"> -smash </h6>
       </div>
         <img src="Images\042.jpg"></img>
       </div>
       </div>
 
+
       <!-- Section for a person introduction of the site -->
-    <div id="Swelcome-skills Ssection" >
+    <div id="Swelcome-skills" class="Ssection" >
       <div class="container-fluid">
         <div class = "row">
           <div class = "col-lg-4 col-md-5 Sinfoblock" style="background-color:#FFFFFF;">
@@ -38,7 +39,7 @@
     </div>
 
     <!-- Section linking different parts of the site -->
-    <div id="Swelcome-projects Ssection">
+    <div id="Swelcome-projects" class="Ssection">
       <div class="container-fluid">
       <div class = "row">
         <div class = "col-lg-4 col-md-5 Sinfoblock" style="background-color:#000000;">
