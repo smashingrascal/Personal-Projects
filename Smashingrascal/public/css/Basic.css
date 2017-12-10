@@ -1,0 +1,83 @@
+#app{
+  height: 800px;
+  overflow-y: hidden;
+}
+
+#Sapplication{
+  padding-top:100px;
+  left: 0px;
+  height: 100%;
+  width:100%;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.navbar{
+  padding: 0;
+width:100%;
+height:100px;
+
+}
+.Sheader{
+  padding: 0px 0px 0px 0px;
+  left:0;
+  top:0;
+  width: 100%;
+  height:100%;
+  float:left;
+  z-index: 1;
+  outline: 3px solid #696969;
+  overflow-y: hidden;
+}
+.Scolumn {
+    top:100px;
+    height: 85%;
+    width:0px;
+    position: fixed;
+    background-color: #696969;
+    overflow-x: hidden;
+    transition: 0.0s;
+}
+
+
+/* The navigation menu links */
+.Scolumn a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    display: flex;
+    flex-flow: row;
+    transition: 0.3s;
+    overflow-y: hidden;
+}
+
+.Semblem{
+  left:0;
+  top:0;
+  width: 200px;
+  height:100%;
+  z-index: 2;
+}
+
+.Sbanner{
+  position: relative;
+  height:100%;
+  margin-left: 15%;
+  z-index: 2;
+
+}
+
+.Sicon{
+  float:right;
+  height:100%;
+  z-index: 2;
+}
+
+#Sactiveuser{
+position: absolute;
+right:90px;
+top:50px;
+color: white;
+z-index: 3;
+}
