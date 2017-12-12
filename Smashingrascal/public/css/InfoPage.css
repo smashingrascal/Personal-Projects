@@ -1,21 +1,22 @@
 #Sintro{
   padding: 0;
-width:100%
+  width:100%
 }
 
-#Sintro h3{
+#Sintromessage{
   position: relative;
-  top:350px;
+  height:0;
+  top:250px;
   z-index: 2;
   color:white;
   -webkit-text-stroke: 1px black;
 }
 
-#Sintro h6{
+#Swelcome-scroller{
   position: absolute;
   top:650px;
   right: 10px;
-  z-index: 2;
+  z-index: 20;
   color:white;
   -webkit-text-stroke: 1px black;
   position: fixed;
@@ -24,6 +25,8 @@ width:100%
 
 #Sintro img{
   z-index: 1;
+  position: relative;
+  top:0;
   margin-left: 0;
   margin-right: 0;
   width: 100%;

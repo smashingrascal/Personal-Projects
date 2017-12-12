@@ -11,11 +11,16 @@ $Sheader = \App\Http\Controllers\DesignController::getHeader();
 </head>
 <body>
 
-      <div id="Stop">
+        <div id="Sheader">
         @include('includes.Navigation')
-      </div>
-          @yield('content')
 
+        </div>
+        <div id=Sapplication>
+          @yield('content')
+      </div>
+      <div class="footer" style="text-align:right;">
+        <h6> Property of Iwan Snapper 2017 </h6>
+      </div>
     <!-- Styles -->
     @include('includes.Scripts')
 </body>

@@ -1,18 +1,19 @@
+<?php
+use \App\Http\Controllers\DesignController;
+$Sheader = \App\Http\Controllers\DesignController::getHeader();
+  ?>
+
 @extends('Layouts.app')
 
   @section('content')
-
     <!-- Section for a simple introduction -->
-    <div id="Sintro" class="container-fluid Ssection">
-      <div class="center">
-        <div>
-        <h3> Welcome to my domain <br> I hope you got invited here. <br> Otherwise I'd advise you to leave</h3>
-        <h6 id="SwelcomeScroller" class="button" onclick="scrollWelcomeSkills()"> -smash </h6>
-      </div>
-        <img src="Images\042.jpg"></img>
-      </div>
-      </div>
 
+    <h6 id="Swelcome-scroller" class="button" onclick="scrollWelcomeSkills()"> -smash </h6>
+
+    <div id="Sintro">
+      <h3 id="Sintromessage" class="center"> Welcome to my domain <br> I hope you got invited here. <br> Otherwise I'd advise you to leave</h3>
+      <img src="Images\042.jpg"></img>
+    </div>
 
       <!-- Section for a person introduction of the site -->
     <div id="Swelcome-skills" class="Ssection" >
@@ -64,6 +65,7 @@
       </div>
     </div>
   </div>
+  
 
 
 @endsection

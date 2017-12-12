@@ -2,7 +2,8 @@
 use \App\Http\Controllers\DesignController;
 $Sheader = \App\Http\Controllers\DesignController::getHeader();
   ?>
-<div id="Sheader sticky-top">
+<div id="Sheadercontent">
+  <div class="row">
 <div id="Simagebar"class="container-fluid" style="background-color: {{$Sheader['headercolor']}} ">
 
     <div class="row">
@@ -20,17 +21,21 @@ $Sheader = \App\Http\Controllers\DesignController::getHeader();
   <h5 id="Sactiveuser" >{{ Auth::user()->name }}</h5>
   @endguest
 </div>
-
+</div>
 </div>
 
 
 
 <div id="Snavigation" class="Scolumn">
       <a href="/">Dashboard</a>
+      <a href="/lNQueue">lNQueue</a>
+      <a href="/ChecklN">ChecklN</a>
+      <a href="/lNtouch">lNtouch</a>
   @guest
       <a href="{{ route('login') }}">Login</a>
   @else
       <a href="/home">{{ Auth::user()->name }}</a>
+
       <a href="{{ route('logout') }}"
                 onclick="event.preventDefault();
                       document.getElementById('logout-form').submit();">
@@ -42,5 +47,5 @@ $Sheader = \App\Http\Controllers\DesignController::getHeader();
       </form>
 
   @endguest
-      <a href="/">lNtouch</a>
+
 </div>

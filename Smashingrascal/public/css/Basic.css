@@ -4,17 +4,26 @@
   margin-left: auto;
   margin-right: auto;
 }
-#Stop{
-position: fixed;
+#Sheader{
+top:0;
+width:100%;
+height:120px;
+}
+
+#Sheadercontent{
+  position: fixed;
 top:0;
 width:100%;
 z-index: 1000;
+height:120px;
 }
 
-#app{
-  margin-top: 220px;
-  width: 100%;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
 }
+
 #Simagebar{
   width: 100%;
   height:100px;
@@ -62,9 +71,11 @@ z-index: 1000;
   }
 }
 
+#Snavigation{
+  z-index: 1000;
+}
+
 #Sapplication{
-  position: absolute;
-  top: 125px;
   height: 100%;
   width:100%;
   overflow-x: hidden;
@@ -107,6 +118,12 @@ color: white;
 .Ssection{
   width:100%;
   transition: 5s;
+}
+
+.overlay{
+  position: absolute;
+  height: 0;
+  width:0;
 }
 
 .button{
