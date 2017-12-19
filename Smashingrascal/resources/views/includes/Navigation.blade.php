@@ -2,6 +2,7 @@
 use \App\Http\Controllers\DesignController;
 $Sheader = \App\Http\Controllers\DesignController::getHeader();
   ?>
+
 <div id="Sheadercontent">
   <div class="row">
 <div id="Simagebar"class="container-fluid" style="background-color: {{$Sheader['headercolor']}} ">
@@ -31,6 +32,7 @@ $Sheader = \App\Http\Controllers\DesignController::getHeader();
       <a href="/lNQueue">lNQueue</a>
       <a href="/ChecklN">ChecklN</a>
       <a href="/lNtouch">lNtouch</a>
+      <a href="/lNstyle">lNstyle</a>
   @guest
       <a href="{{ route('login') }}">Login</a>
   @else

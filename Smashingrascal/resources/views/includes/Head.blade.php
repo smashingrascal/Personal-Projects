@@ -13,3 +13,4 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
 <link rel="stylesheet" href="/css/Basic.css">
 <link rel="stylesheet" href="/css/InfoPage.css">
+<link rel="stylesheet" href="/css/lNstyle.css">

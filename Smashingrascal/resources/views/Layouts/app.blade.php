@@ -15,7 +15,7 @@ $Sheader = \App\Http\Controllers\DesignController::getHeader();
         @include('includes.Navigation')
 
         </div>
-        <div id=Sapplication>
+        <div id=Sapplication style="background-color:white;">
           @yield('content')
       </div>
       <div class="footer" style="text-align:right;">

@@ -24,6 +24,14 @@ Route::get('/lNQueue', function () {
 Route::get('/lNtouch', function () {
     return view('pages/lNtouch');
 });
+Route::post('/lNtouch',['as'=>'resizeImagePost','uses'=>'ImageController@resizeImagePost']);
+
+Route::get('/lNstyle', function () {
+    return view('pages/lNstyle');
+});
+
+Route::post('lNstyle/add', 'DesignController@Ssaveheader');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

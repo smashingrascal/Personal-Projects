@@ -1,0 +1,47 @@
+
+.Sheader{
+top:0;
+width:100%;
+height:120px;
+}
+
+.Sheadercontent{
+width:100%;
+height:120px;
+}
+
+.Simagebar{
+  width: 100%;
+  height:100px;
+}
+
+.Semblem{
+  height:100px;
+}
+
+.Sbanner{
+  height:100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Sicon{
+  height:100px;
+  float:right;
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 1050px){
+  .Sicon{
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 830px){
+  .Sbanner{
+    display: none;
+
+  }
+}
