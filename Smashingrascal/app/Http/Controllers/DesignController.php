@@ -11,9 +11,9 @@ class DesignController extends Controller
 {
   public static function getHeader()
   {
-
+    $styles = \App\Design::inRandomOrder()->get();
       $Sheaders = \App\HeaderStyle::getHeaderStyles();
-      return $Sheaders;
+      return $styles;
   }
 
   public function Ssaveheader(Request $request)
@@ -30,22 +30,23 @@ class DesignController extends Controller
 
 
     $image = $request->file('emblem');
-        $filename = time() . '.' . $image->getClientOriginalExtension();
-        $location = public_path('images\added\\' . $filename);
-        Image::make($image)->save($location);
-    $style->emblem = $filename;
 
-    $image = $request->file('banner');
-        $filename = time() . '.' . $image->getClientOriginalExtension();
+        $filename = 'emblem' . time() . '.' . $image->getClientOriginalExtension();
         $location = public_path('images\added\\' . $filename);
         Image::make($image)->save($location);
-    $style->banner = $filename;
+    $style->emblem = "images\added\\" . $filename;
+    echo   $style->emblem ;
+    $image2 = $request->file('banner');
+        $filename2 = 'banner' . time() . '.' . $image2->getClientOriginalExtension();
+        $location2 = public_path('images\added\\' . $filename2);
+        Image::make($image2)->save($location2);
+    $style->banner = "images\added\\" . $filename2;
 
-    $image = $request->file('icon');
-        $filename = time() . '.' . $image->getClientOriginalExtension();
-        $location = public_path('images\added\\' . $filename);
-        Image::make($image)->save($location);
-    $style->icon = $filename;
+    $image3 = $request->file('icon');
+        $filename3 = 'icon' . time() . '.' . $image3->getClientOriginalExtension();
+        $location3 = public_path('images\added\\' . $filename3);
+        Image::make($image3)->save($location3);
+    $style->icon = "images\added\\" . $filename3;
 
     $style->save();
     return redirect('/');

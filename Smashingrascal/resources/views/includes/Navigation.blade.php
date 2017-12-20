@@ -5,12 +5,12 @@ $Sheader = \App\Http\Controllers\DesignController::getHeader();
 
 <div id="Sheadercontent">
   <div class="row">
-<div id="Simagebar"class="container-fluid" style="background-color: {{$Sheader['headercolor']}} ">
+<div id="Simagebar"class="container-fluid" style="background-color: {{$Sheader[0]->color}} ">
 
     <div class="row">
-  <img id="Semblem" class="button" onclick="openNav()" src="{{$Sheader['emblem']}}" alt="Secret Button"/>
-  <img id="Sbanner" src="{{$Sheader['banner']}}" alt="Card image cap">
-  <img id="Sicon" src="{{$Sheader['icon']}}" alt="Oops">
+  <img id="Semblem" class="button" onclick="openNav()" src="{{$Sheader[0]->emblem}}" alt="Secret Button"/>
+  <img id="Sbanner" src="{{$Sheader[0]->banner}}" alt="Card image cap">
+  <img id="Sicon" src="{{$Sheader[0]->icon}}" alt="Oops">
 </div>
 
 </div>

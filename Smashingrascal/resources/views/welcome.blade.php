@@ -8,7 +8,7 @@ $Sheader = \App\Http\Controllers\DesignController::getHeader();
   @section('content')
     <!-- Section for a simple introduction -->
 
-    <h6 id="Swelcome-scroller" class="button" onclick="scrollWelcomeSkills()"> -smash </h6>
+    <h5 id="Swelcome-scroller" class="button" onclick="scrollWelcomeSkills()"> -smash </h5>
 
     <div id="Sintro">
       <h3 id="Sintromessage" class="center"> Welcome to my domain <br> I hope you got invited here. <br> Otherwise I'd advise you to leave</h3>
@@ -65,7 +65,7 @@ $Sheader = \App\Http\Controllers\DesignController::getHeader();
       </div>
     </div>
   </div>
-  
+
 
 
 @endsection

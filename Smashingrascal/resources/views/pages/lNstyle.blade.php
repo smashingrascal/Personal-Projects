@@ -3,9 +3,10 @@
 
 
 
-  <div id="lNstyle" class="container-fluid Ssection">
+  <div id="lNstyle" class="container-fluid Ssection" style="background-color:#EEEEEE;">
             <h1 class="center"> lNstyle</h1>
 
+            <hr>
               <div class="row">
 
                 <div class="">
@@ -17,45 +18,40 @@
   <div id="lNstyle-add" class="Ssection">
 
 
-
             <form action="/lNstyle/add" method="post" enctype="multipart/form-data">
               <div class="row" >
-                <div class="col-3 Sinfoblock center">
-                  <div class="vcenter">
+                <div class="col-3 center">
+                  <img id="lNstylenr1" src="Images\nr1.jpg" style="height:100px;">
+
                     <h3>Select Emblem</h3>
                     <input id="Sselect-emblem" type="file" name="emblem" >
-                  </div>
                 </div>
 
                 <div class="col-3 center">
-                  <div class="vcenter">
+                  <img id="lNstylenr1" src="Images\nr2.png" style="height:100px;">
                   <h3>Select Banner</h3>
                   <input id="Sselect-banner" type="file" name="banner" >
-                  </div>
                 </div>
 
                 <div class="col-3 center">
-                  <div class="vcenter">
+                  <img id="lNstylenr1" src="Images\nr3.jpg" style="height:100px;">
                   <h3>Select Icon</h3>
                   <input id="Sselect-icon" type="file" name="icon" >
                 </div>
-                  </div>
 
-                  <div class="col-3 center">
-                  <div class="vcenter">
+                <div class="col-3 center">
+                  <img id="lNstylenr1" src="Images\nr4.jpeg" style="height:100px;">
                     <h3>Color Selector</h3>
-                    <div class="input-group colorpicker colorpicker-component">
+                  <div class="input-group colorpicker colorpicker-component">
+                    <input id="Sselect-color" type="text" value="#00AABB" class="form-control" name="color"/>
 
-                      <input id="Sselect-color" type="text" value="#00AABB" class="form-control" name="color"/>
+                    <span class="input-group-addon"><i></i></span>
 
-      <span class="input-group-addon"><i></i></span>
-
-    </div>
                   </div>
                 </div>
               </div>
-              <button type="submit" class="button" style="width:100%;">Submit</button>
-            </form>
+          <button type="submit" class="button" style="width:100%;">Submit</button>
+        </form>
 
               <div class="Sheadercontent">
                 <div class="row">
@@ -72,7 +68,7 @@
               </div>
 </div>
 
-<div id="lNtouch-show" class="Ssection">
+<div id="lNstyle-show" class="Ssection">
 
 
 </div>
