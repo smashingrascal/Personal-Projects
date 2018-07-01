@@ -11,26 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/ChecklN', function () {
-    return view('pages/ChecklN');
-});
-Route::get('/lNQueue', function () {
-    return view('pages/lNQueue');
-});
+Route::get('/', 'PageController@getWelcomePage');
+Route::get('/ChecklN', 'PageController@getChecklNPage');
+Route::get('/lNQueue', 'PageController@getlNQueuePage');
 
-Route::get('/lNtouch', function () {
-    return view('pages/lNtouch');
-});
+Route::get('/lNtouch', 'PageController@getlNtouchPage');
 Route::post('/lNtouch',['as'=>'resizeImagePost','uses'=>'ImageController@resizeImagePost']);
 
-Route::get('/lNstyle', function () {
-    return view('pages/lNstyle');
-});
-
+Route::get('/lNstyle', 'PageController@getlNstylePage');
 Route::post('lNstyle/add', 'DesignController@Ssaveheader');
+Route::get('/lNstyle/destroy/{id}', 'DesignController@destroy');
+
+Route::get('/Endouble', 'PageController@getEndouble');
 
 Auth::routes();
 

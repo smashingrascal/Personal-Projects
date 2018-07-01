@@ -19,50 +19,51 @@ $Sheader = \App\Http\Controllers\DesignController::getHeader();
     <div id="Swelcome-skills" class="Ssection" >
       <div class="container-fluid">
         <div class = "row">
-          <div class = "col-lg-4 col-md-5 Sinfoblock" style="background-color:#FFFFFF;">
+          <div class = "col-lg-4 col-md-5 Sinfoblock" style="background-color:#FF6D00;">
             <div class="center vcenter">
-              <h1> This </h1>
+              <i class="devicon-laravel-plain-wordmark font-size15"></i>
             </div>
           </div>
-          <div class = "col-lg-4 col-md-5 Sinfoblock" style="background-color:#000000">
+          <div class = "col-lg-4 col-md-5 Sinfoblock" style="background-color:#FFFFFF">
             <div class="center vcenter">
-              <h1> Page </h1>
+              <h1 class="center"> For this site I used the following skills: </h1>
+            </div>
+          </div>
+
+          <div class = "col-lg-4 col-md-5 Sinfoblock" style="background-color:#FF6D00;">
+            <div class="center vcenter">
+              <i class="devicon-css3-plain-wordmark font-size15"></i>
+            </div>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-lg-4 col-md-5 Sinfoblock" style="background-color:#FFFFFF;">
+            <div class="center vcenter">
+            <i class="devicon-javascript-plain font-size15"></i>
+          </div>
+
+          </div>
+
+          <div class = "col-lg-4 col-md-5 Sinfoblock" style="background-color:#FF6D00">
+            <div class="center vcenter">
+              <i class="devicon-html5-plain-wordmark font-size15"></i>
             </div>
           </div>
 
           <div class = "col-lg-4 col-md-5 Sinfoblock" style="background-color:#FFFFFF;">
             <div class="center vcenter">
-              <h1> Is </h1>
+              <i class="devicon-photoshop-line font-size15"></i>
             </div>
+
           </div>
         </div>
       </div>
     </div>
 
     <!-- Section linking different parts of the site -->
-    <div id="Swelcome-projects" class="Ssection">
+    <div id="Swelcome-projects" class="Ssection" style="background-color:#F0F0F0;">
       <div class="container-fluid">
-      <div class = "row">
-        <div class = "col-lg-4 col-md-5 Sinfoblock" style="background-color:#000000;">
-          <div class="center vcenter">
-          <h1> Stil </h1>
-        </div>
-
-        </div>
-
-        <div class = "col-lg-4 col-md-5 Sinfoblock" style="background-color:#FFFFFF">
-          <div class="center vcenter">
-            <h1> Under </h1>
-          </div>
-        </div>
-
-        <div class = "col-lg-4 col-md-5 Sinfoblock" style="background-color:#000000;">
-          <div class="center vcenter">
-            <h1> Construction </h1>
-          </div>
-
-        </div>
-      </div>
+        <h1>lNstyle - lNqueue - ChecklN - lNtouch</h1>
     </div>
   </div>
 

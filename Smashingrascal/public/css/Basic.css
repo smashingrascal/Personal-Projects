@@ -142,3 +142,6 @@ color: white;
   top: 50%;
   transform: translateY(-50%);
 }
+.font-size15{
+  font-size: 15rem
+}

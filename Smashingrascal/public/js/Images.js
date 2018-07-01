@@ -1,3 +1,9 @@
+$("#lNstyleselect").click(function () {
+
+    $("#lNstyle-add").toggle();
+    $("#lNstyle-show").toggle();
+});
+
 $('.colorpicker').colorpicker();
 
 $("#Sselect-emblem").change(function(){

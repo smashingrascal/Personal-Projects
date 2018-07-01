@@ -29,12 +29,12 @@ $Sheader = \App\Http\Controllers\DesignController::getHeader();
 
 <div id="Snavigation" class="Scolumn">
       <a href="/">Dashboard</a>
-      <a href="/lNQueue">lNQueue</a>
-      <a href="/ChecklN">ChecklN</a>
+      <!--<a href="/lNQueue">lNQueue</a>
+      <a href="/ChecklN">ChecklN</a>-->
       <a href="/lNtouch">lNtouch</a>
       <a href="/lNstyle">lNstyle</a>
   @guest
-      <a href="{{ route('login') }}">Login</a>
+      <!--<a href="{{ route('login') }}">Login</a>-->
   @else
       <a href="/home">{{ Auth::user()->name }}</a>
 

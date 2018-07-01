@@ -12,8 +12,12 @@ class DesignController extends Controller
   public static function getHeader()
   {
     $styles = \App\Design::inRandomOrder()->get();
-      $Sheaders = \App\HeaderStyle::getHeaderStyles();
       return $styles;
+  }
+
+  public static function SloadHeader()
+  {
+    $styles = \App\Design::all();
   }
 
   public function Ssaveheader(Request $request)
@@ -35,7 +39,7 @@ class DesignController extends Controller
         $location = public_path('images\added\\' . $filename);
         Image::make($image)->save($location);
     $style->emblem = "images\added\\" . $filename;
-    echo   $style->emblem ;
+
     $image2 = $request->file('banner');
         $filename2 = 'banner' . time() . '.' . $image2->getClientOriginalExtension();
         $location2 = public_path('images\added\\' . $filename2);
@@ -49,10 +53,17 @@ class DesignController extends Controller
     $style->icon = "images\added\\" . $filename3;
 
     $style->save();
-    return redirect('/');
+    return redirect('/lNstyle');
 
 
 
+}
+public function destroy($id)
+{
+
+    $design = Design::find($id);
+    $design->delete();
+    return redirect('/lNstyle')->with('success', 'Post Removed');
 }
 
 
